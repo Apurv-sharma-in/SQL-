@@ -1,0 +1,16 @@
+{
+  "name": "02_designing_the_initial_database_schema_for_a_bus_booking_system(task)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5"
+  }
+}
