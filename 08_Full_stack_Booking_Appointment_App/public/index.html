@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Appointment App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 250px; padding: 6px; }
+        button { padding: 6px 12px; cursor: pointer; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; background: #f4f4f4; padding: 10px; width: 400px; display: flex; justify-content: space-between; }
+        .delete-btn { background: red; color: white; border: none; padding: 3px 8px; cursor: pointer; }
+    </style>
+    <!-- Axios for HTTP Requests -->
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+</head>
+<body>
+
+    <h2 style="background-color: #007bff; color: white; display: inline-block; padding: 5px 10px;">BOOKING APPOINTMENT APP</h2>
+
+    <form id="appointmentForm">
+        <div class="form-group">
+            <label for="username">UserName</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Booked Appointments</h3>
+    <ul id="userList"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
