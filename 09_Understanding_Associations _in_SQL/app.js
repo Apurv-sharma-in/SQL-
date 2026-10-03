@@ -7,6 +7,7 @@ const db = require('./utils/db_connection');
 
 //Routes 
 const studentRoutes = require('./routes/student')
+const courcesRoutes = require('./routes/courcesRoutes')
 //Routes 
 
 //Models
@@ -17,6 +18,7 @@ app.use(express.json())
 
 
 app.use('/students',studentRoutes);
+app.use('/cources',courcesRoutes);
 
 
 
